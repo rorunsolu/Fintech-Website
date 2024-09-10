@@ -1,0 +1,15 @@
+.partners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12.5%;
+
+    @media (width < 550px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.5rem;
+    }
+
+    @media (width < 350px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}

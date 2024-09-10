@@ -1,0 +1,20 @@
+.button {
+    width: fit-content;
+
+    border-radius: var(--border-radius);
+    padding: var(--button-padding);
+
+    color: var(--color-white);
+    background-color: var(--color-blue);
+
+    font-size: var(--font-size-button);
+}
+
+.button-secondary {
+    width: fit-content;
+
+    border: 0.1rem solid var(--border-color-pink);
+    padding: var(--button-padding);
+
+    font-size: var(--font-size-button);
+}
