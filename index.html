@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Gaming Website</title>
+    <title>Fintech Solutions</title>
 
     <meta name="description"
-          content="">
-    <!--!ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION--><!--ADD DESCRIPTION-->
+          content="Explore cutting-edge financial technology solutions designed to streamline banking, payments, and investment processes. Discover innovative tools to enhance your financial services experience.">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Modern Normalize -->
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
@@ -46,14 +46,18 @@
         <a class="nav__logo" href="#">Logo</a>
 
         <ul class="nav__list">
-          <li><a class="nav__link" href="">Home</a></li>
-          <li><a class="nav__link" href="">About</a></li>
-          <li><a class="nav__link" href="">Services</a></li>
-          <li><a class="nav__link" href="">Contact</a></li>
-          <li><a class="nav__link" href="">Blog</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#meet">Shop</a></li>
+          <li class="nav__item"><a class="nav__link" href="#testimonials">Contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#schedule">About Us</a></li>
         </ul>
 
         <a class="button">Sign Up Now</a>
+
+        <button class="nav__toggle-button" id="nav__toggle-open" type="button"><i class="ri-menu-line"></i>
+        </button>
+        <button class="nav__toggle-button" id="nav__toggle-close" type="button"><i class="ri-close-line"></i>
+        </button>
 
       </div>
     </nav>
@@ -63,7 +67,7 @@
 
         <h1 class="header__title">Seamless Financial Solutions for the <span>Mordern Era</span></h1>
         <p class="header__subtitle">Simplifying Your Financial Journey with Paysense. Your all-in-one financial solution
-          fpr secure and seamless financial transactions.</p>
+          for secure and seamless financial transactions.</p>
         <div class="header__input-wrapper">
           <!-- <i class="fa-regular fa-envelope"></i> -->
           <input class="header__input" type="text" placeholder="Enter your email address">
@@ -195,7 +199,7 @@
 
             <div class="offers__buttons-wrapper">
               <a class="button">Billed Monthly</a>
-              <a class="button">Billed Yearly</a>
+              <a class="button-secondary">Billed Yearly</a>
             </div>
 
           </div>
@@ -214,9 +218,9 @@
               </h4>
 
               <div class="offers__card-features-wrapper">
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
+                <p class="offers__card-feature">Real-time Payment Tracking</p>
+                <p class="offers__card-feature">Secure Mobile Wallet</p>
+                <p class="offers__card-feature">AI-Powered Fraud Detection</p>
               </div>
 
               <a class="button">Get Started</a>
@@ -235,9 +239,9 @@
               </h4>
 
               <div class="offers__card-features-wrapper">
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
+                <p class="offers__card-feature">Instant Account Setup</p>
+                <p class="offers__card-feature">Low Transaction Fees</p>
+                <p class="offers__card-feature">24/7 Customer Support</p>
               </div>
 
               <a class="button">Get Started</a>
@@ -256,9 +260,9 @@
               </h4>
 
               <div class="offers__card-features-wrapper">
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
-                <p class="offers__card-feature">Lorem ipsum dolor sit amet consectetur</p>
+                <p class="offers__card-feature">Integrated Payment Gateway</p>
+                <p class="offers__card-feature">Automated Invoice Generation</p>
+                <p class="offers__card-feature">Multi-currency Support</p>
               </div>
 
               <a class="button">Get Started</a>
@@ -359,7 +363,7 @@
     <footer id="footer">
       <div class="container footer">
 
-        <div class="footer__comapny">
+        <div class="footer__company">
           <div class="footer__logo-wrapper">
             <i class="fa-solid fa-star"></i>
             <a class="footer__logo">Logo</a>
@@ -367,9 +371,9 @@
           <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero magni, modi
             dignissimos totam eveniet ut amet ad aspernatur maiores facere ab sint.</p>
           <div class="footer__socials">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
           <p class="footer__copyright">Copyright © 2024. All Rights Reserved.</p>
         </div>
@@ -398,10 +402,11 @@
 
         <div class="footer__subscribe">
           <h4 class="footer__subscribe-title">Subscribe to receive updates</h4>
-          <p class="footer__subscribe-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero magni, modi
+          <p class="footer__subscribe-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero magni,
+            modi
             dignissimos totam eveniet ut amet ad aspernatur maiores facere ab sint.</p>
-            <input class="footer__subscribe-input" type="text" placeholder="email@example.com">
-            <button class="footer__subscribe-button">Subscribe</button>
+          <input class="footer__subscribe-input" type="text" placeholder="email@example.com">
+          <button class="footer__subscribe-button">Subscribe</button>
         </div>
 
       </div>

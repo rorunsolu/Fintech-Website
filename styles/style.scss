@@ -3,9 +3,54 @@
     --color-white: #f8f8f8;
     --color-black: #101010;
     --color-grey: #282828;
+    --color-orange: #ffae00;
+    --color-blue-dark: #4926e6;
     --color-light-black: hsl(0, 0%, 30%);
     --color-light-white: hsl(0, 0%, 80%);
+    --color-light-white-2: hsla(0, 0%, 100%, 0.884);
     --color-dark-grey: #262626;
+
+    --color-gradient: background-image:
+            radial-gradient(
+                circle at 70% 18%,
+                hsla(126, 0%, 77%, 0.05) 0%,
+                hsla(126, 0%, 77%, 0.05) 41%,
+                transparent 41%,
+                transparent 100%
+            ),
+        radial-gradient(
+            circle at 6% 94%,
+            hsla(126, 0%, 77%, 0.05) 0%,
+            hsla(126, 0%, 77%, 0.05) 52%,
+            transparent 52%,
+            transparent 100%
+        ),
+        radial-gradient(
+            circle at 93% 63%,
+            hsla(126, 0%, 77%, 0.05) 0%,
+            hsla(126, 0%, 77%, 0.05) 85%,
+            transparent 85%,
+            transparent 100%
+        ),
+        radial-gradient(
+            circle at 5% 85%,
+            hsla(126, 0%, 77%, 0.05) 0%,
+            hsla(126, 0%, 77%, 0.05) 8%,
+            transparent 8%,
+            transparent 100%
+        ),
+        radial-gradient(
+            circle at 49% 93%,
+            hsla(126, 0%, 77%, 0.05) 0%,
+            hsla(126, 0%, 77%, 0.05) 37%,
+            transparent 37%,
+            transparent 100%
+        ),
+        linear-gradient(
+            45deg,
+            rgb(15, 5, 113),
+            rgb(191, 90, 222)
+        );
 
     --border-radius: 2.5rem;
     --border-radius-inner: 0.5rem;
@@ -23,6 +68,8 @@
 
     --font-size-button: 1rem;
     --font-size-paragraph: 1rem;
+
+    --transition: 200ms ease-in-out;
 }
 
 * {
@@ -48,6 +95,7 @@ body {
     line-height: 1.6;
 
     background-color: var(--color-white);
+    background-color: var(--color-black);
 
     color: var(--color-black);
 
@@ -78,7 +126,7 @@ header {
 footer {
     grid-area: footer;
 
-        padding: 5rem 0rem;
+    padding: 5rem 0rem;
 
     background-color: var(--color-cream-secondary);
 }
@@ -128,7 +176,7 @@ main {
 section {
     padding: 5rem 0rem;
 
-        @media (width < 750px) {
+    @media (width < 750px) {
         padding: 3.5rem 0rem;
     }
 }

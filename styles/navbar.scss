@@ -17,10 +17,6 @@ nav {
 
     box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
 
-    @media (width < 1000px) {
-        display: none;
-    }
-
     &__logo {
         font-weight: bold;
 
@@ -31,6 +27,28 @@ nav {
         display: flex;
 
         gap: 2rem;
+
+        @media (width < 1000px) {
+            display: none;
+            flex-direction: column;
+            gap: 0;
+
+            position: absolute;
+            top: 100%;
+            right: 0;
+        }
+    }
+
+    &__item {
+        background-color: var(--color-white);
+        @media (width < 1000px) {
+            border-radius: 0;
+            padding: 1rem 5rem;
+
+            height: 100%;
+
+            background-color: var(--color-white);
+        }
     }
 
     &__link {
@@ -43,5 +61,38 @@ nav {
 
             transition: 200ms ease-in-out;
         }
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+.nav__toggle-button {
+    display: none;
+
+    color: var(--color-black);
+
+    @media (width < 1000px) {
+        display: inline-block;
+
+        background: transparent;
+
+        font-size: 2rem;
+
+        color: hsl(0, 0%, 0%);
+
+        cursor: pointer;
+    }
+}
+
+#nav__toggle-open {
+    color: var(--color-black);
+}
+
+#nav__toggle-close {
+    color: var(--color-black);
+    @media (width < 1000px) {
+        display: none;
     }
 }
