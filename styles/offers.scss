@@ -1,103 +1,74 @@
 .offers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-
-    &__text-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    &__title {
-    }
-    &__subtitle {
-        margin-bottom: 2rem;
-    }
-    &__buttons-wrapper {
-
-                @media (width < 350px) {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            margin: 0;
-        }
-
-        :nth-child(1) {
-            margin-right: 1rem;
-        }
-    }
     &__card-wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 2rem;
 
-        @media (width < 1200px) {
-            grid-template-columns: repeat(2, 1fr);
+        @media (width < 650px) {
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         }
 
-        @media (width < 775px) {
-            grid-template-columns: repeat(1, 1fr);
+        @media (width < 500px) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
     }
     &__card {
         display: flex;
         flex-direction: column;
-
-        box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
-        border-radius: 1rem;
-        padding: 2rem;
-
-        max-width: 25rem;
-    }
-
-    &__card-icon {
-        display: flex;
         align-items: center;
-        justify-content: center;
 
-        border-radius: 50%;
-        margin-bottom: 0.75rem;
-        padding: 1rem;
+        border-radius: var(--border-radius);
+        padding: var(--padding-card);
 
-        height: 3rem;
-        width: 3rem;
-
-        font-size: 1.25rem;
-
-        color: var(--color-white);
-        background-color: var(--color-blue);
+        box-shadow: var(--shadow);
     }
+
     &__card-title {
+        margin-bottom: 0.5rem;
     }
-    &__card-subtitle {
+
+    &__card-fee {
+        display: flex;
+
+        margin-bottom: 0.5rem;
     }
-    &__card-price {
+
+    &__card-unit {
+        position: relative;
+        top: 0.25rem;
+
+        font-size: 1.125rem;
+        font-weight: 600;
+
+        color: var(--color-black);
     }
+
+    &__card-amount {
+        font-size: 2rem;
+        font-weight: 600;
+
+        color: var(--color-black);
+    }
+
+    &__card-duration {
+        position: relative;
+        top: 1.2rem;
+        left: 0.125rem;
+
+        font-size: 0.9rem;
+    }
+
     &__card-features-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.35rem;
 
-        margin: 1rem 0;
+        margin-bottom: 1.5rem;
     }
     &__card-feature {
     }
 
-    span {
-        font-size: 2.5rem;
-
-        
-        @media (width < 1400px) {
-            font-size: 1.5rem;
-        }
-    }
-
     .button {
-        text-align: center;
-
         width: 100%;
     }
 }

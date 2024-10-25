@@ -1,5 +1,5 @@
 #footer {
-    background-color: var(--color-light-black);
+    background-color: var(--color-black);
 }
 
 .footer {
@@ -44,6 +44,14 @@
         @media (width < 1000px) {
             justify-content: center;
         }
+
+        a {
+            color: var(--color-light-white);
+
+            &:hover {
+                color: var(--color-white);
+            }
+        }
     }
 
     &__pages {
@@ -71,6 +79,10 @@
 
     &__link {
         color: var(--color-light-white);
+
+        &:hover {
+            color: var(--color-white);
+        }
     }
     &__linked {
         display: flex;

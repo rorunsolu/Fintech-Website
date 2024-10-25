@@ -1,4 +1,4 @@
-#growth {
+#conversion {
     position: relative;
 
     &::before {
@@ -20,10 +20,9 @@
     }
 }
 
-.growth {
+.conversion {
     display: flex;
     flex-direction: column;
-    align-items: start;
 
     position: relative;
 
@@ -36,20 +35,14 @@
     }
 
     &__subtitle {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
         width: 50%;
 
         color: var(--color-light-white);
 
         @media (width < 1400px) {
-            text-align: center;
             width: 100%;
         }
-    }
-
-    .button {
-        color: var(--color-black);
-        background-color: var(--color-white);
     }
 }

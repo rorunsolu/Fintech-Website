@@ -9,8 +9,9 @@ body {
 h1 {
     font-size: 6rem;
     font-weight: 600;
+    line-height: 1.2;
 
-    color: var(--color-cream);
+    text-transform: capitalize;
 
     @media (width < 1000px) {
         font-size: 4.5rem;
@@ -32,38 +33,27 @@ h1 {
 h2 {
     font-size: 3rem;
     font-weight: 600;
-    text-align: center;
 
-    color: var(--color-black);
-
-        @media (width < 750px) {
+    @media (width < 750px) {
         font-size: 2.25rem;
     }
 
-        @media (width < 300px) {
+    @media (width < 300px) {
         font-size: 1.75rem;
     }
 }
 
 h3 {
     font-size: 1.5rem;
-
-    color: var(--color-black);
 }
 
 h4 {
-            font-size: 1.25rem;
-        font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 p {
+    font-size: 1rem;
+
     color: var(--color-light-black);
-
-            @media (width < 450px) {
-            font-size: 0.9rem;
-        }
-}
-
-span {
-    color: var(--color-pink);
 }
