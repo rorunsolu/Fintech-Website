@@ -1,4 +1,4 @@
-.offers {
+.pricing {
     &__card-wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -64,8 +64,6 @@
         gap: 0.35rem;
 
         margin-bottom: 1.5rem;
-    }
-    &__card-feature {
     }
 
     .button {

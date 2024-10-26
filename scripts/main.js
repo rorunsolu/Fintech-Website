@@ -7,7 +7,7 @@ import '/styles/trust.scss';
 import '/styles/partners.scss';
 import '/styles/benefits.scss';
 import '/styles/tracking.scss';
-import '/styles/offers.scss';
+import '/styles/pricing.scss';
 import '/styles/conversion.scss';
 import '/styles/testimonials.scss';
 import '/styles/footer.scss';

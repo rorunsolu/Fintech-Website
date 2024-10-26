@@ -49,13 +49,28 @@
         </a>
 
         <ul class="nav__list">
-          <li><a class="nav__link" href="https://fintech-website-six.vercel.app/">Home</a></li>
-          <li><a class="nav__link" href="#offers">Pricing</a></li>
-          <li><a class="nav__link" href="#conversion">Contact</a></li>
-          <li><a class="nav__link" href="#benefits">About Us</a></li>
-        </ul>
 
-        <a class="button button--white">Contact Us</a>
+          <li class="nav__item"><a class="nav__link" href="https://fintech-website-six.vercel.app/">Home</a></li>
+
+          <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#pricing">Personal</a></li>
+              <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#pricing">Pro</a></li>
+              <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#pricing">Business</a></li>
+              <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#pricing">Enterprise</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item"><a class="nav__link" href="#conversion">Contact</a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Support</a></li>
+              <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Sales</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item"><a class="nav__link" href="#benefits">About Us</a></li>
+
+        </ul>
 
       </div>
     </nav>
@@ -67,7 +82,7 @@
         <p class="header__subtitle">Simplifying your financial journey with Paysense. Your all-in-one financial solution
           for secure and seamless financial transactions.</p>
         <div class="header__input-wrapper">
-          <input class="header__input" type="text" placeholder="Enter your email address">
+          <input type="text" placeholder="Enter your email address">
           <a class="button button--black button--input">Sign Up</a>
         </div>
 
@@ -184,11 +199,9 @@
 
             </div>
 
-
             <a class="button button--black">Learn More</a>
 
           </div>
-
 
         </div>
       </section>
@@ -267,53 +280,30 @@
         </div>
       </section>
 
-      <section id="offers">
-        <div class="container offers">
+      <section id="pricing">
+        <div class="container pricing">
 
           <div class="text-wrapper">
-            <h2 class="offers__title">Get exclusive offers and discounts</h2>
-            <p class="offers__subtitle">Join the Paysense community today and take control of your financial life.</p>
+            <h2 class="pricing__title">Get exclusive offers and discounts</h2>
+            <p class="pricing__subtitle">Join the Paysense community today and take control of your financial life.</p>
           </div>
 
-          <div class="offers__card-wrapper">
+          <div class="pricing__card-wrapper">
 
-            <article class="offers__card">
+            <article class="pricing__card">
 
-              <h3 class="offers__card-title">Personal</h3>
+              <h3 class="pricing__card-title">Personal</h3>
 
-              <div class="offers__card-fee">
-                <p class="offers__card-unit">$</p>
-                <p class="offers__card-amount">16</p>
-                <p class="offers__card-duration">/mo</p>
+              <div class="pricing__card-fee">
+                <p class="pricing__card-unit">$</p>
+                <p class="pricing__card-amount">16</p>
+                <p class="pricing__card-duration">/mo</p>
               </div>
 
-              <div class="offers__card-features-wrapper">
-                <p class="offers__card-feature">Real-time Payment Tracking</p>
-                <p class="offers__card-feature">Secure Mobile Wallet</p>
-                <p class="offers__card-feature">AI-Powered Fraud Detection</p>
-              </div>
-
-              <div class="button-wrapper">
-                <a class="button button--black">Subscribe</a>
-                <a class="button button--white">More Info</a>
-              </div>
-
-            </article>
-
-            <article class="offers__card">
-
-              <h3 class="offers__card-title">Pro</h3>
-
-              <div class="offers__card-fee">
-                <p class="offers__card-unit">$</p>
-                <p class="offers__card-amount">20</p>
-                <p class="offers__card-duration">/mo</p>
-              </div>
-
-              <div class="offers__card-features-wrapper">
-                <p class="offers__card-feature">Instant Account Setup</p>
-                <p class="offers__card-feature">Low Transaction Fees</p>
-                <p class="offers__card-feature">24/7 Customer Support</p>
+              <div class="pricing__card-features-wrapper">
+                <p class="pricing__card-feature">Real-time Payment Tracking</p>
+                <p class="pricing__card-feature">Secure Mobile Wallet</p>
+                <p class="pricing__card-feature">AI-Powered Fraud Detection</p>
               </div>
 
               <div class="button-wrapper">
@@ -323,20 +313,20 @@
 
             </article>
 
-            <article class="offers__card">
+            <article class="pricing__card">
 
-              <h3 class="offers__card-title">Business</h3>
+              <h3 class="pricing__card-title">Pro</h3>
 
-              <div class="offers__card-fee">
-                <p class="offers__card-unit">$</p>
-                <p class="offers__card-amount">30</p>
-                <p class="offers__card-duration">/mo</p>
+              <div class="pricing__card-fee">
+                <p class="pricing__card-unit">$</p>
+                <p class="pricing__card-amount">20</p>
+                <p class="pricing__card-duration">/mo</p>
               </div>
 
-              <div class="offers__card-features-wrapper">
-                <p class="offers__card-feature">Integrated Payment Gateway</p>
-                <p class="offers__card-feature">Automated Invoice Generation</p>
-                <p class="offers__card-feature">Multi-currency Support</p>
+              <div class="pricing__card-features-wrapper">
+                <p class="pricing__card-feature">Instant Account Setup</p>
+                <p class="pricing__card-feature">Low Transaction Fees</p>
+                <p class="pricing__card-feature">24/7 Customer Support</p>
               </div>
 
               <div class="button-wrapper">
@@ -346,20 +336,43 @@
 
             </article>
 
-            <article class="offers__card">
+            <article class="pricing__card">
 
-              <h3 class="offers__card-title">Enterprise</h3>
+              <h3 class="pricing__card-title">Business</h3>
 
-              <div class="offers__card-fee">
-                <p class="offers__card-unit">$</p>
-                <p class="offers__card-amount">50</p>
-                <p class="offers__card-duration">/mo</p>
+              <div class="pricing__card-fee">
+                <p class="pricing__card-unit">$</p>
+                <p class="pricing__card-amount">30</p>
+                <p class="pricing__card-duration">/mo</p>
               </div>
 
-              <div class="offers__card-features-wrapper">
-                <p class="offers__card-feature">Dedicated Account Manager</p>
-                <p class="offers__card-feature">Custom Payment Solutions</p>
-                <p class="offers__card-feature">Advanced Analytics & Reports</p>
+              <div class="pricing__card-features-wrapper">
+                <p class="pricing__card-feature">Integrated Payment Gateway</p>
+                <p class="pricing__card-feature">Automated Invoice Generation</p>
+                <p class="pricing__card-feature">Multi-currency Support</p>
+              </div>
+
+              <div class="button-wrapper">
+                <a class="button button--black">Subscribe</a>
+                <a class="button button--white">More Info</a>
+              </div>
+
+            </article>
+
+            <article class="pricing__card">
+
+              <h3 class="pricing__card-title">Enterprise</h3>
+
+              <div class="pricing__card-fee">
+                <p class="pricing__card-unit">$</p>
+                <p class="pricing__card-amount">50</p>
+                <p class="pricing__card-duration">/mo</p>
+              </div>
+
+              <div class="pricing__card-features-wrapper">
+                <p class="pricing__card-feature">Dedicated Account Manager</p>
+                <p class="pricing__card-feature">Custom Payment Solutions</p>
+                <p class="pricing__card-feature">Advanced Analytics & Reports</p>
               </div>
 
               <div class="button-wrapper">
@@ -491,56 +504,55 @@
       <div class="container footer">
 
         <div class="footer__company">
-          <a class="logo" href="https://fintech-website-six.vercel.app/">
-            <img src="/images/logo-small.png" alt="Company logo">
-            Paynet
-          </a>
-          <p class="footer__text">Dedicated to providing secure, seamless financial solutions that support your business
+          <a class="logo" href="https://fintech-website-six.vercel.app/"><img src="/images/logo-small.png" alt="Company logo">Paynet</a>
+          <p class="footer__company-subtitle">Dedicated to providing secure, seamless financial solutions that support your business
             every
             step of the way.</p>
           <div class="footer__socials">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="footer__socials-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="footer__socials-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="footer__socials-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
-          <p class="footer__copyright">Copyright © 2024. All Rights Reserved.</p>
+          <p class="footer__company-copyright">Copyright © 2024. All Rights Reserved.</p>
         </div>
 
-        <div class="footer__pages">
-          <h4 class="footer__subtitle">Our Pages</h4>
-          <ul class="footer__pages-list">
-            <li><a class="footer__link" href="#">Home</a></li>
-            <li><a class="footer__link" href="#">About</a></li>
-            <li><a class="footer__link" href="#">Services</a></li>
-            <li><a class="footer__link" href="#">Contact</a></li>
-            <li><a class="footer__link" href="#">Blog</a></li>
+        <div class="footer__group">
+          <h4 class="footer__group-title">Our Pages</h4>
+          <ul class="footer__group-list">
+            <li><a class="footer__group-link" href="#">Home</a></li>
+            <li><a class="footer__group-link" href="#">About</a></li>
+            <li><a class="footer__group-link" href="#">Services</a></li>
+            <li><a class="footer__group-link" href="#">Contact</a></li>
+            <li><a class="footer__group-link" href="#">Blog</a></li>
           </ul>
         </div>
 
-        <div class="footer__linked">
-          <h4 class="footer__subtitle">Quick Links</h4>
-          <ul class="footer__linked-list">
-            <li><a class="footer__link" href="#">FAQ</a></li>
-            <li><a class="footer__link" href="#">Pricing</a></li>
-            <li><a class="footer__link" href="#">About Us</a></li>
-            <li><a class="footer__link" href="#">Terms</a></li>
-            <li><a class="footer__link" href="#">Privacy</a></li>
+        <div class="footer__group">
+          <h4 class="footer__group-title">Quick Links</h4>
+          <ul class="footer__group-list">
+            <li><a class="footer__group-link" href="#">FAQ</a></li>
+            <li><a class="footer__group-link" href="#">Pricing</a></li>
+            <li><a class="footer__group-link" href="#">About Us</a></li>
+            <li><a class="footer__group-link" href="#">Terms</a></li>
+            <li><a class="footer__group-link" href="#">Privacy</a></li>
           </ul>
         </div>
 
-        <div class="footer__subscribe">
-          <h4 class="footer__subscribe-title">Subscribe for Updates</h4>
-          <p class="footer__subscribe-text">Stay informed with the latest news and insights from Paynet. Sign up to
+        <div class="footer__input">
+          <h4 class="footer__input-title">Subscribe to our mailing list</h4>
+          <p class="footer__input-subtitle">Stay informed with the latest news and insights from Paynet. Sign up to
             receive our
             updates directly in your inbox.</p>
-          <input class="footer__subscribe-input" type="text" placeholder="email@example.com">
-          <button class="footer__subscribe-button">Subscribe</button>
+          <input type="text" placeholder="Enter your email address">
+          <button class="button button--black button--email">Subscribe</button>
         </div>
 
+      </div>
+    </footer>
 
-        <script>
+    <script>
 
-        </script>
+    </script>
 
   </body>
 

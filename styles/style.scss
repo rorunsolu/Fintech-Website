@@ -41,6 +41,8 @@
 }
 
 html {
+    scroll-behavior: smooth;
+
     font-size: 16px;
 }
 
@@ -59,15 +61,11 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     padding: 5rem 0rem;
 }
 
 footer {
-    padding: 5rem 0rem;
+    padding: 2rem 0rem;
 
     background-color: var(--color-cream-secondary);
 }
@@ -99,6 +97,14 @@ img {
 article {
     border-radius: var(--border-radius-card);
     padding: var(--card-padding);
+}
+
+input {
+    height: 2rem;
+}
+
+button {
+    cursor: pointer;
 }
 
 svg {
