@@ -2,12 +2,18 @@
     width: 85%;
 
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 112.5rem;
 
     position: relative;
 
     @media (width < 700px) {
         width: 90%;
+    }
+}
+
+.width-100 {
+    @media (width < 1000px) {
+        width: 100%;
     }
 }
 
@@ -25,12 +31,6 @@
     padding: var(--padding-button);
 
     width: fit-content;
-
-    font-weight: var(--font-weight-button);
-
-    &:active {
-        border: 1.5px solid var(--color-white);
-    }
 
     &--black {
         border: 0.15rem solid transparent;
@@ -100,4 +100,8 @@
         height: 3rem;
         width: 3rem;
     }
+}
+
+.window-scrolled {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 }

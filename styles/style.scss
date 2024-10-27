@@ -3,29 +3,18 @@
     --color-white-2: hsl(0, 0%, 85%);
     --color-black: hsl(0, 0%, 0%);
     --color-black-2: hsl(0, 0%, 20%);
-    --color-grey: hsl(0, 0%, 16%);
-    --color-orange: hsl(39, 100%, 50%);
 
     --color-light-white: hsl(0, 0%, 80%);
-    --color-light-white-2: hsla(0, 0%, 100%, 0.884);
     --color-light-black: hsl(0, 0%, 30%);
 
-    --color-dark-grey: #262626;
-
-    --shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
 
     --border: 0.15rem solid var(--color-black);
     --border-radius: 0.5rem;
-    --border-radius-icon: 0.5rem;
 
     --padding-card: 2rem;
     --padding-button: 0.5rem 1rem;
     --padding-icon: 0.5rem;
-
-    --grid-block-gap: 1.5rem;
-
-    --font-size-button: 1rem;
-    --font-size-paragraph: 1rem;
 
     --transition: 0.3s ease-in-out;
 }
@@ -67,7 +56,9 @@ header {
 footer {
     padding: 2rem 0rem;
 
-    background-color: var(--color-cream-secondary);
+    @media (width < 1000px) {
+        padding: 0;
+    }
 }
 
 section {
@@ -101,10 +92,6 @@ article {
 
 input {
     height: 2rem;
-}
-
-button {
-    cursor: pointer;
 }
 
 svg {
