@@ -6,6 +6,7 @@
     --color-black-2: hsl(0, 0%, 20%);
     --color-light-black: hsl(0, 0%, 30%);
     --color-orange: hsl(39, 100%, 50%);
+    --color-purple: hsl(248, 93%, 62%);
 
     --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
 
@@ -16,7 +17,7 @@
     --padding-button: 0.5rem 1rem;
     --padding-icon: 0.5rem;
 
-    --transition: 0.3s ease-in-out;
+    --transition: 0.2s ease-in-out;
 }
 
 * {
@@ -100,6 +101,6 @@ input {
 }
 
 svg {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
