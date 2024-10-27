@@ -27,13 +27,11 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
 
-    <!-- Custom SCSS Imports -->
     <script type="module" src="/scripts/main.js"></script>
 
   </head>
@@ -41,7 +39,7 @@
   <body>
 
     <nav>
-      <div class="container nav">
+      <div class="container nav width-100">
 
         <a class="logo" href="https://fintech-website-six.vercel.app/">
           <img src="/images/logo-small.png" alt="Company logo">
@@ -61,7 +59,7 @@
             </ul>
           </li>
 
-          <li class="nav__item"><a class="nav__link" href="#conversion">Contact</a>
+          <li class="nav__item"><a class="nav__link" href="#conversion">Contact Us</a>
             <ul class="nav__dropdown">
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Support</a></li>
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Sales</a></li>
@@ -71,6 +69,10 @@
           <li class="nav__item"><a class="nav__link" href="#benefits">About Us</a></li>
 
         </ul>
+
+        <button class="open-menu-btn" id="js-open-menu-btn" aria-label="open menu" type="button">
+          <i class="ri-menu-line"></i>
+        </button>
 
       </div>
     </nav>
@@ -500,12 +502,14 @@
 
     </main>
 
-    <footer id="footer">
-      <div class="container footer">
+    <footer>
+      <div class="container footer width-100">
 
         <div class="footer__company">
-          <a class="logo" href="https://fintech-website-six.vercel.app/"><img src="/images/logo-small.png" alt="Company logo">Paynet</a>
-          <p class="footer__company-subtitle">Dedicated to providing secure, seamless financial solutions that support your business
+          <a class="logo" href="https://fintech-website-six.vercel.app/"><img src="/images/logo-small.png"
+                 alt="Company logo">Paynet</a>
+          <p class="footer__company-subtitle">Dedicated to providing secure, seamless financial solutions that support
+            your business
             every
             step of the way.</p>
           <div class="footer__socials">
@@ -551,6 +555,88 @@
     </footer>
 
     <script>
+
+      let openMenuBarBtn = document.getElementById('js-open-menu-btn');
+      let closeMenuBarBtn = document.getElementById('js-close-menu-btn');
+
+      openMenuBarBtn.addEventListener('click', openMenuBar);
+
+      function openMenuBar() {
+        if (document.getElementById('js-menu')) return;
+
+        let menuBar = document.createElement('div');
+
+        menuBar.className = 'menu';
+        menuBar.id = 'js-menu';
+
+        menuBar.innerHTML = `
+            
+              <div class="menu-top" id="js-menu-top">
+    
+                <button class="close-menu-btn" id="js-close-menu-btn" aria-label="close menu" type="button">
+                  <i class="ri-close-line"></i>
+                </button>
+    
+              </div>
+    
+              <div class="menu-bottom" id="js-menu-bottom">
+                
+                <ul>
+                  <li><a href="https://fintech-website-six.vercel.app/">Home</a></li>
+                  <li><a href="#pricing">Pricing</a></li>
+                  <li><a href="#conversion">Contact Us</a></li>
+                  <li><a href="#benefits">About Us</a></li>
+                </ul>
+    
+              </div>
+            `;
+
+        document.body.style.overflow = 'hidden';
+
+        document.body.appendChild(menuBar);
+
+        let closeMenuBarBtn = document.getElementById('js-close-menu-btn');
+
+        closeMenuBarBtn.addEventListener('click', closeMenuBar);
+
+        let links = menuBar.querySelectorAll('ul li a');
+        links.forEach(link => {
+          link.addEventListener('click', closeMenuBar);
+        });
+
+        createOverlay();
+      }
+
+      function closeMenuBar() {
+        let menuBar = document.getElementById('js-menu');
+        let overlay = document.querySelector('.menu-overlay');
+
+        document.body.style.overflow = 'auto';
+
+        if (menuBar) {
+          menuBar.remove();
+        }
+
+        removeOverlay();
+      }
+
+      function createOverlay() {
+        let overlay = document.createElement('div');
+
+        overlay.className = 'menu-overlay';
+
+        overlay.addEventListener("click", closeMenuBar);
+
+        document.body.appendChild(overlay);
+      }
+
+      function removeOverlay() {
+        let overlay = document.querySelector('.menu-overlay');
+
+        if (overlay) {
+          overlay.remove();
+        }
+      }
 
     </script>
 
