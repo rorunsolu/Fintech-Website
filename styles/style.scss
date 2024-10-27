@@ -1,11 +1,11 @@
 :root {
     --color-white: hsl(0, 0%, 100%);
     --color-white-2: hsl(0, 0%, 85%);
+    --color-light-white: hsl(0, 0%, 80%);
     --color-black: hsl(0, 0%, 0%);
     --color-black-2: hsl(0, 0%, 20%);
-
-    --color-light-white: hsl(0, 0%, 80%);
     --color-light-black: hsl(0, 0%, 30%);
+    --color-orange: hsl(39, 100%, 50%);
 
     --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
 
@@ -27,6 +27,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 }
 
 html {
@@ -88,6 +93,12 @@ img {
 article {
     border-radius: var(--border-radius-card);
     padding: var(--card-padding);
+}
+
+button {
+    cursor: pointer;
+
+    background: none;
 }
 
 input {

@@ -67,18 +67,6 @@
     }
 }
 
-.button-direct {
-    color: var(--color-orange);
-
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:active {
-        color: var(--color-white);
-    }
-}
-
 .text-wrapper {
     display: flex;
     flex-direction: column;
@@ -100,8 +88,4 @@
         height: 3rem;
         width: 3rem;
     }
-}
-
-.window-scrolled {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 }
