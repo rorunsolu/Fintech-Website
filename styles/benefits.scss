@@ -1,12 +1,4 @@
 .benefits {
-    &__subtitle {
-        width: 50%;
-
-        @media (width < 1400px) {
-            width: 100%;
-        }
-    }
-
     &__card-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
