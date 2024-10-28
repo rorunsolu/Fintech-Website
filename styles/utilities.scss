@@ -19,11 +19,14 @@
 
 .button-wrapper {
     display: flex;
-    justify-content: center;
     text-align: center;
     gap: 1rem;
 
     width: 100%;
+
+    @media (width < 450px) {
+        flex-direction: column;
+    }
 }
 
 .button {
@@ -90,7 +93,6 @@
     }
 }
 
-.rotate{
+.rotate {
     transform: rotate(180deg);
 }
-
