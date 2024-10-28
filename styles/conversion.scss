@@ -21,21 +21,12 @@
 }
 
 .conversion {
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-
-    @media (width < 1400px) {
-        align-items: center;
-    }
-
     &__title {
         color: var(--color-white);
     }
 
     &__subtitle {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 
         width: 50%;
 
