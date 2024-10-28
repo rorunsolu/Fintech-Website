@@ -1,12 +1,4 @@
 .tracking {
-    &__subtitle {
-        width: 50%;
-
-        @media (width < 1400px) {
-            width: 100%;
-        }
-    }
-
     &__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
