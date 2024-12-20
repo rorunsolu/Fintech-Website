@@ -1,5 +1,10 @@
 .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     max-width: 350px;
@@ -25,8 +30,14 @@
     }
 
     &__top {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
         justify-content: right;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         padding: 0.5rem;
@@ -49,14 +60,25 @@
     }
 
     &__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
         position: relative;
 
         &-arrow {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
             position: absolute;
@@ -66,6 +88,10 @@
             height: 3rem;
 
             color: var(--color-purple);
+
+            -webkit-transition: var(--transition);
+
+            -o-transition: var(--transition);
 
             transition: var(--transition);
 
@@ -82,7 +108,15 @@
     &__dropdown {
         display: none;
 
+        width: -webkit-fit-content;
+
+        width: -moz-fit-content;
+
         width: fit-content;
+
+        -webkit-transition: var(--transition);
+
+        -o-transition: var(--transition);
 
         transition: var(--transition);
 
@@ -100,8 +134,14 @@
 
 .close-menu-btn,
 .open-menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     border-radius: var(--border-radius);
@@ -111,6 +151,10 @@
 
     color: var(--color-black);
     color: var(--color-purple);
+
+    -webkit-transition: var(--transition);
+
+    -o-transition: var(--transition);
 
     transition: var(--transition);
 

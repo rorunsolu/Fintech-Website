@@ -1,4 +1,5 @@
 .footer {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 3fr;
     gap: 3rem;
@@ -6,7 +7,9 @@
     border-radius: var(--border-radius);
     padding: 2rem;
 
-    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+
+            box-shadow: var(--shadow);
 
     @media (width < 1500px) {
         grid-template-columns: 3fr 1fr 1fr;
@@ -14,8 +17,13 @@
     }
 
     @media (width < 1000px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         gap: 2rem;
     }
@@ -33,6 +41,8 @@
     }
 
     &__socials {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 1rem;
 
@@ -48,8 +58,13 @@
     }
 
     &__group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         &-title {
             color: var(--color-black);
@@ -73,8 +88,13 @@
     }
 
     &__input {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
         &-title {
             text-transform: capitalize;
@@ -87,20 +107,35 @@
         }
 
         &-wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             gap: 2rem;
 
             border-radius: var(--border-radius);
             padding: 0.75rem;
 
+            width: -webkit-fit-content;
+
+            width: -moz-fit-content;
+
             width: fit-content;
 
-            box-shadow: var(--shadow);
+            -webkit-box-shadow: var(--shadow);
+
+                    box-shadow: var(--shadow);
 
             @media (width < 450px) {
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 gap: 0.5rem;
 
                 padding: 1rem;

@@ -1,5 +1,6 @@
 .tracking {
     &__content {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
@@ -17,16 +18,30 @@
     }
 
     &__feedback-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         gap: 2rem;
     }
 
     &__feedback {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 0.5rem;
+
+        -webkit-box-shadow: var(--shadow);
 
         box-shadow: var(--shadow);
         border-radius: var(--border-radius);
@@ -34,20 +49,34 @@
     }
 
     &__feedback-type {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 1rem;
     }
 
     &__feedback-results {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 0.5rem;
     }
 
     &__icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
 
         border-radius: var(--border-radius);

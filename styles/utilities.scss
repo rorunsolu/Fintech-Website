@@ -18,6 +18,8 @@
 }
 
 .button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
     gap: 1rem;
@@ -25,6 +27,9 @@
     width: 100%;
 
     @media (width < 450px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
@@ -32,6 +37,10 @@
 .button {
     border-radius: var(--border-radius);
     padding: var(--padding-button);
+
+    width: -webkit-fit-content;
+
+    width: -moz-fit-content;
 
     width: fit-content;
 
@@ -71,8 +80,15 @@
 }
 
 .text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     text-align: left;
 
@@ -80,7 +96,11 @@
 }
 
 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     font-size: 1.25rem;
@@ -94,5 +114,7 @@
 }
 
 .rotate {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }

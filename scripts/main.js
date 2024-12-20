@@ -13,7 +13,6 @@ import '/styles/testimonials.scss';
 import '/styles/footer.scss';
 
 let openMenuBarBtn = document.getElementById('js-open-menu-btn');
-let closeMenuBarBtn = document.getElementById('js-close-menu-btn');
 
 openMenuBarBtn.addEventListener('click', openMenuBar);
 
@@ -130,7 +129,6 @@ function rotateArrow() {
 
 function closeMenuBar() {
     let menuBar = document.getElementById('js-menu');
-    let overlay = document.querySelector('.menu__overlay');
 
     document.body.style.overflow = 'auto';
 
