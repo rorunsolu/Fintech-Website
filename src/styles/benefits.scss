@@ -11,11 +11,9 @@
     }
 
     &__card {
-        border-radius: var(--border-radius);
         padding: var(--padding-card);
 
         -webkit-box-shadow: var(--shadow);
-
         box-shadow: var(--shadow);
     }
 

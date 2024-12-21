@@ -11,7 +11,7 @@
     --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
 
     --border: 0.15rem solid var(--color-black);
-    --border-radius: 0.5rem;
+    --border-radius: 0.125rem;
 
     --padding-card: 2rem;
     --padding-button: 0.5rem 1rem;
@@ -78,9 +78,7 @@ a {
     cursor: pointer;
 
     -webkit-transition: var(--transition);
-
     -o-transition: var(--transition);
-
     transition: var(--transition);
 }
 
@@ -95,8 +93,7 @@ img {
 }
 
 article {
-    border-radius: var(--border-radius-card);
-    padding: var(--card-padding);
+    border-top: 6px solid var(--color-black);
 }
 
 button {

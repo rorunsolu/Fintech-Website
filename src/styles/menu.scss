@@ -11,8 +11,6 @@
     width: 90%;
     height: 100%;
 
-    border-radius: var(--border-radius) 0 0 var(--border-radius);
-
     position: fixed;
     top: 0;
     right: 0;
@@ -143,8 +141,6 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
-    border-radius: var(--border-radius);
 
     width: 3rem;
     aspect-ratio: 1/1;
