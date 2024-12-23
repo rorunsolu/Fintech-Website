@@ -1,4 +1,8 @@
 .benefits {
+    &__subtitle {
+        max-width: 700px;
+    }
+
     &__card-wrapper {
         display: -ms-grid;
         display: grid;
@@ -20,5 +24,7 @@
     svg {
         width: 5rem;
         height: 5rem;
+
+        color: var(--color-purple);
     }
 }

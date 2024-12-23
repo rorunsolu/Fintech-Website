@@ -29,12 +29,8 @@
     &__subtitle {
         margin-bottom: 2rem;
 
-        width: 50%;
+        max-width: 700px;
 
         color: var(--color-light-white);
-
-        @media (width < 1400px) {
-            width: 100%;
-        }
     }
 }
