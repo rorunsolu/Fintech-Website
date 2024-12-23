@@ -1,23 +1,28 @@
 :root {
     --color-white: hsl(0, 0%, 100%);
-    --color-white-2: hsl(0, 0%, 85%);
+    --color-white-2: hsl(0, 0%, 92.5%);
     --color-light-white: hsl(0, 0%, 80%);
     --color-black: hsl(0, 0%, 0%);
     --color-black-2: hsl(0, 0%, 20%);
     --color-light-black: hsl(0, 0%, 30%);
     --color-orange: hsl(39, 100%, 50%);
-    --color-purple: hsl(248, 93%, 62%);
+    --color-purple: hsl(268, 100%, 50%);
+    --color-purple-2: hsl(268, 100%, 40%);
 
     --shadow: 0rem 0rem 0.9375rem -0.1875rem hsla(0, 0%, 0%, 0.1);
 
-    --border: 0.15rem solid var(--color-black);
-    --border-radius: 0.125rem;
+    --border: 0.15rem solid var(--color-purple);
+    --border-radius: 0.225rem;
 
     --padding-card: 2rem;
     --padding-button: 0.5rem 1rem;
     --padding-icon: 0.5rem;
 
     --transition: 0.2s ease-in-out;
+
+    @media (width < 350px) {
+        --padding-card: 1rem;
+    }
 }
 
 * {
@@ -52,18 +57,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    padding: 5rem 0rem;
-}
-
-footer {
-    padding: 2rem 0rem;
-
-    @media (width < 1000px) {
-        padding: 0;
-    }
-}
-
 section {
     padding: 7.5rem 0;
 
@@ -90,10 +83,12 @@ img {
     object-position: center;
 
     width: 100%;
+
+    border-radius: var(--border-radius);
 }
 
 article {
-    border-top: 6px solid var(--color-black);
+    border-top: 5px solid var(--color-purple);
 }
 
 button {

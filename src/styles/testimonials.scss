@@ -20,6 +20,7 @@
         flex-direction: column;
         gap: 1.5rem;
 
+        border-radius: var(--border-radius);
         padding: var(--padding-card);
 
         -webkit-box-shadow: var(--shadow);
@@ -51,7 +52,7 @@
             padding: var(--padding-icon);
 
             color: var(--color-white);
-            background-color: var(--color-black);
+            background-color: var(--color-purple);
         }
         &-stars {
             display: -webkit-box;

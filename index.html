@@ -14,22 +14,20 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- Modern Normalize -->
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
         /modern-normalize.min.css" rel="stylesheet">
-
-    <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Box Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 
     <script type="module" src="/src/main.js"></script>
@@ -39,7 +37,7 @@
   <body>
 
     <nav>
-      <div class="container nav width-100">
+      <div class="nav">
 
         <a class="logo" href="https://fintech-website-six.vercel.app/">
           <img src="./src/images/logo-small.png" alt="Company logo">
@@ -50,7 +48,13 @@
 
           <li class="nav__item"><a class="nav__link" href="https://fintech-website-six.vercel.app/">Home</a></li>
 
-          <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a>
+          <li class="nav__item"><a class="nav__link" href="#pricing">Pricing
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                   stroke="currentColor"
+                   class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </a>
 
             <ul class="nav__dropdown">
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#pricing">Personal</a></li>
@@ -61,7 +65,13 @@
 
           </li>
 
-          <li class="nav__item"><a class="nav__link" href="#conversion">Contact Us</a>
+          <li class="nav__item"><a class="nav__link" href="#conversion">Contact
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                   stroke="currentColor"
+                   class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </a>
             <ul class="nav__dropdown">
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Support</a></li>
               <li class="nav__dropdown-item"><a class="nav__dropdown-link" href="#">Sales</a></li>
@@ -92,14 +102,8 @@
         <div class="header__input-wrapper">
           <label for="email" class="visually-hidden">Email Address</label>
           <input type="email" placeholder="Enter your email address">
-          <a href="#" aria-label="Sign Up for to create an account" class="button button--black button--input">Sign Up</a>
-        </div>
-
-        <div class="header__image-wrapper">
-          <img class="header__image" src="./src/images/hero-1.jpg" alt="Hero Image">
-          <img class="header__image" src="./src/images/hero-2.jpg" alt="Hero Image">
-          <img class="header__image" src="./src/images/hero-3.jpg" alt="Hero Image">
-          <img class="header__image" src="./src/images/hero-4.jpg" alt="Hero Image">
+          <a href="#" aria-label="Sign Up for to create an account" class="button button--input">Sign
+            Up</a>
         </div>
 
       </div>
@@ -208,65 +212,105 @@
 
             </div>
 
-            <a href="#" aria-label="Learn more about why you should work with us" class="button button--black">Learn More</a>
+            <a href="#" aria-label="Learn more about why you should work with us" class="button button--black">Learn
+              More</a>
 
           </div>
 
         </div>
       </section>
 
-      <section id="tracking">
-        <div class="container tracking">
+      <section id="testimonials">
+        <div class="container testimonials">
 
           <div class="text-wrapper">
-            <h2 class="tracking__title">Track Your Finances the Right Way</h2>
-            <p class="tracking__subtitle">With Paysense, you can track your finances on the go, set budgets, and receive
-              real-time notifications. Stay on top of your money, and take control of your financial life.</p>
+            <h2 class="testimonials__title">What Our Users Are Saying</h2>
+            <p class="testimonials__subtitle">Hear from our satisfied clients about their experiences with us.</p>
           </div>
 
-          <div class="tracking__content">
+          <div class="testimonials__card-wrapper">
 
-            <div class="tracking__feedback-wrapper">
+            <article class="testimonials__card">
 
-              <article class="tracking__feedback">
-                <div class="tracking__feedback-type">
-                  <div class="tracking__icon"><i class="ri-chat-smile-3-line"></i></div>
-                  <h3 class="tracking__feedback-name">Satisfaction</h3>
+              <div class="testimonials__card-top">
+                <div class="testimonials__card-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="testimonials__card-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
+              </div>
 
-                <h4 class="tracking__feedback-results">
-                  <span>80%</span>
-                  of users
-                </h4>
+              <div class="testimonials__card-middle">
+                <h4 class="testimonials__card-quote">"This service exceeded all my expectations!"</h4>
+                <p class="testimonials__card-review">The team was professional, responsive, and truly understood my
+                  needs. I
+                  highly recommend them to anyone looking for quality service and excellent customer care.</p>
+              </div>
 
-                <p class="tracking__feedback-description">Our users have given us a satisfaction rating of 80%, and we
-                  have over 600,000 reviews.
-                </p>
+              <div class="testimonials__card-bottom">
+                <p class="testimonials__card-name">John Doe</p>
+                <p class="testimonials__card-job">Project Manager</p>
+              </div>
 
-              </article>
+            </article>
 
-              <article class="tracking__feedback">
+            <article class="testimonials__card">
 
-                <div class="tracking__feedback-type">
-                  <div class="tracking__icon"><i class="ri-question-answer-line"></i></div>
-                  <h3 class="tracking__feedback-name">Reviews</h3>
+              <div class="testimonials__card-top">
+                <div class="testimonials__card-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="testimonials__card-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
+              </div>
 
-                <h4 class="tracking__feedback-results">
-                  <span>600K</span>
-                  reviews
-                </h4>
+              <div class="testimonials__card-middle">
+                <h4 class="testimonials__card-quote">"I had a great experience working with this team."</h4>
+                <p class="testimonials__card-review">Their attention to detail and commitment to delivering top-notch
+                  results
+                  made the entire process smooth and stress-free. I'll definitely be using their services again.</p>
+              </div>
 
-                <p class="tracking__feedback-description">Our users have given us a satisfaction rating of 80%, and we
-                  have over 600,000 reviews.
-                </p>
+              <div class="testimonials__card-bottom">
+                <p class="testimonials__card-name">Jane Smith</p>
+                <p class="testimonials__card-job">Marketing Specialist</p>
+              </div>
 
-              </article>
+            </article>
 
-            </div>
+            <article class="testimonials__card">
 
-            <img class="tracking__image" src="./src/images/tracking.jpg"
-                 alt="Image of a team of staff in a business meeting">
+              <div class="testimonials__card-top">
+                <div class="testimonials__card-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="testimonials__card-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="testimonials__card-middle">
+                <h4 class="testimonials__card-quote">"Their innovative solutions really helped our business grow."</h4>
+                <p class="testimonials__card-review">The team delivered results that far exceeded our expectations, and
+                  their
+                  creative approach brought a fresh perspective to our project. Highly recommended!</p>
+              </div>
+
+              <div class="testimonials__card-bottom">
+                <p class="testimonials__card-name">Emily Taylor</p>
+                <p class="testimonials__card-job">Business Owner</p>
+              </div>
+
+            </article>
+
 
           </div>
 
@@ -394,97 +438,58 @@
         </div>
       </section>
 
-      <section id="testimonials">
-        <div class="container testimonials">
+      <section id="tracking">
+        <div class="container tracking">
 
           <div class="text-wrapper">
-            <h2 class="testimonials__title">What Our Users Are Saying</h2>
-            <p class="testimonials__subtitle">Hear from our satisfied clients about their experiences with us.</p>
+            <h2 class="tracking__title">Track Your Finances the Right Way</h2>
+            <p class="tracking__subtitle">With Paysense, you can track your finances on the go, set budgets, and receive
+              real-time notifications. Stay on top of your money, and take control of your financial life.</p>
           </div>
 
-          <div class="testimonials__card-wrapper">
+          <div class="tracking__content">
 
-            <article class="testimonials__card">
+            <div class="tracking__feedback-wrapper">
 
-              <div class="testimonials__card-top">
-                <div class="testimonials__card-icon"><i class="fa-solid fa-star"></i></div>
-                <div class="testimonials__card-stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+              <article class="tracking__feedback">
+                <div class="tracking__feedback-type">
+                  <div class="tracking__icon"><i class="ri-chat-smile-3-line"></i></div>
+                  <h3 class="tracking__feedback-name">Satisfaction</h3>
                 </div>
-              </div>
 
-              <div class="testimonials__card-middle">
-                <h4 class="testimonials__card-quote">"This service exceeded all my expectations!"</h4>
-                <p class="testimonials__card-review">The team was professional, responsive, and truly understood my
-                  needs. I
-                  highly recommend them to anyone looking for quality service and excellent customer care.</p>
-              </div>
+                <h4 class="tracking__feedback-results">
+                  <span>80%</span>
+                  of users
+                </h4>
 
-              <div class="testimonials__card-bottom">
-                <p class="testimonials__card-name">John Doe</p>
-                <p class="testimonials__card-job">Project Manager</p>
-              </div>
+                <p class="tracking__feedback-description">Our users have given us a satisfaction rating of 80%, and we
+                  have over 600,000 reviews.
+                </p>
 
-            </article>
+              </article>
 
-            <article class="testimonials__card">
+              <article class="tracking__feedback">
 
-              <div class="testimonials__card-top">
-                <div class="testimonials__card-icon"><i class="fa-solid fa-star"></i></div>
-                <div class="testimonials__card-stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="tracking__feedback-type">
+                  <div class="tracking__icon"><i class="ri-question-answer-line"></i></div>
+                  <h3 class="tracking__feedback-name">Reviews</h3>
                 </div>
-              </div>
 
-              <div class="testimonials__card-middle">
-                <h4 class="testimonials__card-quote">"I had a great experience working with this team."</h4>
-                <p class="testimonials__card-review">Their attention to detail and commitment to delivering top-notch
-                  results
-                  made the entire process smooth and stress-free. I'll definitely be using their services again.</p>
-              </div>
+                <h4 class="tracking__feedback-results">
+                  <span>600K</span>
+                  reviews
+                </h4>
 
-              <div class="testimonials__card-bottom">
-                <p class="testimonials__card-name">Jane Smith</p>
-                <p class="testimonials__card-job">Marketing Specialist</p>
-              </div>
+                <p class="tracking__feedback-description">Our users have given us a satisfaction rating of 80%, and we
+                  have over 600,000 reviews.
+                </p>
 
-            </article>
+              </article>
 
-            <article class="testimonials__card">
+            </div>
 
-              <div class="testimonials__card-top">
-                <div class="testimonials__card-icon"><i class="fa-solid fa-star"></i></div>
-                <div class="testimonials__card-stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-
-              <div class="testimonials__card-middle">
-                <h4 class="testimonials__card-quote">"Their innovative solutions really helped our business grow."</h4>
-                <p class="testimonials__card-review">The team delivered results that far exceeded our expectations, and
-                  their
-                  creative approach brought a fresh perspective to our project. Highly recommended!</p>
-              </div>
-
-              <div class="testimonials__card-bottom">
-                <p class="testimonials__card-name">Emily Taylor</p>
-                <p class="testimonials__card-job">Business Owner</p>
-              </div>
-
-            </article>
-
+            <img class="tracking__image" src="./src/images/tracking.jpg"
+                 alt="Image of a team of staff in a business meeting">
 
           </div>
 
@@ -494,7 +499,7 @@
     </main>
 
     <footer>
-      <div class="container footer width-100">
+      <div class="footer">
 
         <div class="footer__company">
           <a class="logo" href="https://fintech-website-six.vercel.app/"><img src="./src/images/logo-small.png"
@@ -547,7 +552,7 @@
           <div class="footer__input-wrapper">
             <label for="email" class="visually-hidden">Email Address</label>
             <input type="text" placeholder="Enter your email address">
-            <button class="button button--black button--input">Subscribe</button>
+            <button class="button button--input">Subscribe</button>
           </div>
         </div>
 

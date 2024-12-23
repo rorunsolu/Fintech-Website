@@ -2,18 +2,12 @@
     width: 85%;
 
     margin: 0 auto;
-    max-width: 112.5rem;
+    max-width: 1300px;
 
     position: relative;
 
     @media (width < 700px) {
         width: 90%;
-    }
-}
-
-.width-100 {
-    @media (width < 1000px) {
-        width: 100%;
     }
 }
 
@@ -47,9 +41,11 @@
 
         color: var(--color-white);
         background-color: var(--color-black);
+        background-color: var(--color-purple);
 
         &:hover {
             background-color: var(--color-black-2);
+            background-color: var(--color-purple-2);
         }
     }
 
@@ -67,8 +63,15 @@
     &--input {
         padding: 0.25rem 1rem;
 
+        background-color: var(--color-white);
+        color: var(--color-purple);
+
         @media (width < 450px) {
             width: 100%;
+        }
+
+        &:hover {
+            color: var(--color-black);
         }
     }
 
@@ -102,8 +105,9 @@
     align-items: center;
 
     font-size: 1.25rem;
+    font-weight: 500;
 
-    color: var(--color-black);
+    color: var(--color-white);
 
     img {
         height: 3rem;
