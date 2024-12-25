@@ -36,15 +36,15 @@
     width: -moz-fit-content;
     width: fit-content;
 
+    font-weight: 500;
+
     &--black {
         border: 0.15rem solid transparent;
 
         color: var(--color-white);
-        background-color: var(--color-black);
         background-color: var(--color-purple);
 
         &:hover {
-            background-color: var(--color-black-2);
             background-color: var(--color-purple-2);
         }
     }
@@ -53,6 +53,19 @@
         border: var(--border);
 
         color: var(--color-black);
+        background-color: var(--color-white);
+
+        display: none;
+
+        &:hover {
+            background-color: var(--color-white-2);
+        }
+    }
+
+    &--header {
+        padding: 1rem 1.5rem;
+
+        color: var(--color-purple);
         background-color: var(--color-white);
 
         &:hover {
@@ -105,7 +118,7 @@
     align-items: center;
 
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
 
     color: var(--color-white);
 

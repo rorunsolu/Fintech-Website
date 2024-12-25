@@ -8,6 +8,8 @@ header {
     min-height: 100vh;
     min-height: 100dvh;
 
+    background-color: var(--color-purple);
+
     &::before {
         content: "";
 
@@ -18,7 +20,7 @@ header {
         width: 100%;
         height: 100%;
 
-        background-image: url("/src/images/stocks-hero-bg.jpg");
+        //background-image: url("/src/images/stocks-hero-bg.jpg");
         background-size: cover;
         background-position: center;
         z-index: -1;
@@ -38,9 +40,17 @@ header {
     }
 
     &__subtitle {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+
+        max-width: 700px;
+
+        font-size: 1.25rem;
 
         color: var(--color-light-white);
+
+        @media (width < 400px) {
+            font-size: 1rem;
+        }
     }
 
     &__input-wrapper {
@@ -53,28 +63,24 @@ header {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        gap: 2rem;
 
         border-radius: var(--border-radius);
+        margin-bottom: 1rem;
         padding: 0.75rem;
 
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
 
-         background-color: var(--color-white);
+        background-color: var(--color-white);
 
         -webkit-box-shadow: var(--shadow);
         box-shadow: var(--shadow);
 
         @media (width < 450px) {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            gap: 0.5rem;
-
-            padding: 1rem;
+            input {
+                max-width: 150px;
+            }
         }
     }
 }
